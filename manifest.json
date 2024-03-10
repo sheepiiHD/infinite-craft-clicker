@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
-  "name": "Random Auto Clicker",
+  "name": "Infinite Craft Clicker",
   "version": "1.0",
-  "description": "Automatically clicks on elements and scrolls randomly.",
+  "description": "It will randomly craft things in the background, and allow you to discover stuff by yourself.",
   "permissions": ["activeTab", "scripting"],
   "action": {
     "default_popup": "popup.html"

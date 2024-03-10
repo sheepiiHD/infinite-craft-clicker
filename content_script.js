@@ -11,11 +11,12 @@ chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
     }
 });
 function startClicking() {
+
     // Check if the current page is not the intended URL
     if (window.location.href !== "https://neal.fun/infinite-craft/") {
         alert("Navigate to https://neal.fun/infinite-craft/, then start");
-        clicking = false; // Optionally stop clicking if on the wrong page
-        return; // Exit the function if not on the correct page
+        clicking = false;
+        return;
     }
 
     if (!clicking) return;
@@ -25,6 +26,7 @@ function startClicking() {
         const itemToClick = items[Math.floor(Math.random() * items.length)];
         itemToClick.click();
 
-        setTimeout(startClicking, 10); // Adjust time as needed
+        // Updated delay to 250ms to comply with Cloudflare's 1200 requests per 5 minutes limit
+        setTimeout(startClicking, 250);
     }
 }

@@ -15,7 +15,6 @@ document.getElementById('stop').addEventListener('click', function() {
     console.log('Stop button clicked');
     (async () => {
         const [tab] = await chrome.tabs.query({active: true, lastFocusedWindow: true});
-        // Always unmute when stopping, regardless of checkbox state
         if (tab.mutedInfo.muted) {
             await chrome.tabs.update(tab.id, {muted: false});
         }
