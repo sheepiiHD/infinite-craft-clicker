@@ -1,0 +1,12 @@
+{
+  "name": "infinite-craft-clicker",
+  "version": "1.0.0",
+  "description": "basically, it clicks for you lol",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "sheepiiHD",
+  "license": "ISC"
+}
